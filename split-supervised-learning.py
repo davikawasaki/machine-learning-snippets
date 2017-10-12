@@ -60,6 +60,7 @@ class SplitBase:
                 n = len(arrays)
                 trQty = int(n*trRate)
                 for i, item in enumerate(arrays):
+                    item.insert(0, key)
                     if i < trQty-1:
                         trGroup.append(item)
                     else:
