@@ -8,7 +8,7 @@ This repository covers some developed/in development snippets used for machine l
 
 # SNIPPETS
 
-1.\ CSV percentage split (supervised learning): insert a CSV file with semicolon delimitators and split proportionally to each true label, exporting two files - one for training (normally 80%) and another for testing (normally 20%).
+1\. CSV percentage split (supervised learning): insert a CSV file with semicolon delimitators and split proportionally to each true label, exporting two files - one for training (normally 80%) and another for testing (normally 20%).
 
 # HOW TO USE
 
