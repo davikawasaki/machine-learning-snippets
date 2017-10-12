@@ -68,7 +68,7 @@ class SplitBase:
 
             # Generate training sample file                 
             trOutFile  = open('data/output/' + dfn + '_training' + '.csv', "wb")
-            writer = csv.writer(trOutFile, delimiter=';')
+            writer = csv.writer(trOutFile, delimiter=',')
 
             # Header as the first row to save
             writer.writerow(self.header)
@@ -80,7 +80,7 @@ class SplitBase:
 
             # Generate testing sample file                 
             trOutFile  = open('data/output/' + dfn + '_testing' + '.csv', "wb")
-            writer = csv.writer(trOutFile, delimiter=';')
+            writer = csv.writer(trOutFile, delimiter=',')
 
             # Header as the first row to save
             writer.writerow(self.header)
@@ -124,7 +124,7 @@ elif(ttRate > trRate):
     print 'Testing rate must not be bigger than Training rate! Try it again.'
 else:    
     idf = open('data/raw/' + df + '.csv', 'rU')
-    reader = csv.reader(idf, delimiter=';')
+    reader = csv.reader(idf, delimiter=',')
 
     splitBase = SplitBase(reader)
     tlgb = splitBase.split(tl)

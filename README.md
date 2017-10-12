@@ -20,7 +20,7 @@ $ chmod +x split-supervised-learning.py
 
 2\. Insert the CSV file to be splitted inside /data/raw.
 
-3\. Make sure the delimitators for each value is a semicolon and the header titles are between quotes.
+3\. Make sure the delimitators for each value is a comma and the header titles are between quotes.
 
 4\. Run python script with the true label name, the file name from /data/raw (without .csv extension), the training-rate and the testing rate. Examples:
 
